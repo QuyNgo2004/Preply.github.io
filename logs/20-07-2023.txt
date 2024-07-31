@@ -1,0 +1,4 @@
+::1()--query--tables(delete from table_user_online where time < 1689839983) (15:09:43 20/07/2023)
+::1(admin)--query--tables(delete from table_user_online where time < 1689839992) (15:09:52 20/07/2023)
+::1(admin)--query--tables(delete from table_seo where idmuc = '747' and com = 'product' and act = 'man' and type = 'san-pham') (15:12:26 20/07/2023)
+::1(admin)--query--tables(delete from table_product where id = '747') (15:12:26 20/07/2023)

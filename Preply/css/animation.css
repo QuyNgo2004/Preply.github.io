@@ -1,0 +1,46 @@
+.animationStar{
+    height: 100%;
+    background: rgb(72, 7, 156);
+    animation-name: start; 
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    position: absolute;
+    z-index: 1020;
+    
+    animation-timing-function: ease-in-out;
+  }
+  .animationEnd1{
+    height: 100%;
+    background: green;
+    animation-name: end; 
+    animation-duration: 1s;
+    position: fixed;
+    z-index: 1030;
+    transform: translateX(0%) translateY(0%);
+  }
+  .animationEnd2{
+    height: 100%;
+    background: red;
+    animation-name: end; 
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    position: absolute;
+    z-index: 1040;
+  }
+  .animationEnd3{
+    height: 100%;
+    background: yellow;
+    animation-name: end; 
+    animation-duration: 0.25s;
+    animation-delay: 0.25s;
+    position: absolute;
+    z-index: 1022;
+  }
+  @keyframes start {
+    0% {width: 100%;}
+    100% {width:0%}
+  }
+  @keyframes end {
+    0% {width: 0;}
+    100% {width:100%}
+  }

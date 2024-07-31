@@ -1,0 +1,134 @@
+.service_container{
+    height: 100%;
+    margin: 0% auto;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service_content{
+height: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding-right: 15px;
+padding-left: 15px;
+column-gap: 2rem ;
+margin: auto;
+width: 100%;
+}
+.tile{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 40%;
+    align-items: center;
+}
+
+
+.container_ser{
+    height: 240px;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.content_ser{
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    display: flex;
+    position: relative;
+    /* gap: 1rem; */
+}
+.content_details_ser{
+    height: 100%;
+    width: 100%;
+    /* max-width: 300px; */
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(65, 47, 123, .25);
+    border-radius: 5%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    .icon_ser{
+        img{
+            max-width: 1em;
+            max-height: 1em;
+        }
+    }
+    .tile_ser ,.tile_content_ser{
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .tile_ser{
+        height: 20%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .tile_content_ser{
+        height: 60%;
+    }
+    .svg{
+        height: 1em;
+        width: 1em;
+        margin: 1rem;
+        justify-content: end;
+        color: white;
+        transition: 0.5s;
+       
+    }
+}
+.content_details_ser:hover{
+    background-color: rgba(65, 47, 123, .05);
+    opacity: 0.7;
+    svg{
+      color: yellow;
+    }
+    .svg{
+        transform: rotate(45deg);
+    }
+}
+
+@media (max-width:1200px) {
+    .service_content{
+        flex-direction: column;
+    }  
+    .container_ser{
+        width: 90%;
+    }
+    .tile{
+        width: 100%;
+    }
+}
+@media (min-width:640px) {
+    .content_ser{
+        width: 100%;
+        display: flex;
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+    .container_ser{
+        height: 340px;
+    }
+}
+@media (max-width:640px) {  
+    .tile{
+        padding: 0% 0.5rem;
+        width: 100%;
+        h2{
+            font-size: 30px !important;
+        }
+        p{
+            font-size: 15px !important;
+        }
+    }
+}
